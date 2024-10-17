@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="shortcut icon" href="img/icono.png" type="image/png">
+    <title>PadelPlay</title>
+</head>
+
+<style>
+    * {
+        padding: 0;
+        margin: 0;
+    }
+
+    .imagenesMuestra {
+        height: 230px;
+        width: 100%; 
+        object-fit: cover; 
+    }
+
+    .cartaEventos {
+        box-shadow: 10px 10px 36px 0px rgba(54, 54, 54, 0.75);
+        border-radius: 5px, black;
+        padding: 5px;
+    }
+
+    footer {
+        background-color: #030303;
+        color: white;
+    }
+
+    footer h4 {
+        margin-bottom: 10px;
+    }
+
+    footer a:hover,
+    footer a:focus,
+    footer a:visited {
+        color: white;
+    }
+    
+     #mainImage {
+        height: 60vh;
+        object-fit: contain;
+    }
+
+   
+    @media (max-width: 768px) {
+        #mainImage {
+            height: 40vh; 
+        }
+    }
+
+    body {
+        background: 
+        linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), /* Degradado negro */
+        url('img/Fondo.jpg'); /* Imagen de fondo */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* Fija la imagen de fondo */
+   
+}
+</style>
+
+<body">
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img src="img/icono.png" alt="" class="img-fluid"
+                    style="max-height: 35px; margin-right: 10px;">PadelPlay</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Reservas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Cont&aacute;ctanos</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Sección Imagen Principal -->
+    <section class="ms-3 me-3 mt-3 d-flex justify-content-center">
+        <img src="img/pista.jpg" alt="" class="w-100" id="mainImage">
+    </section>
+
+    <!-- Sección Bienvenido -->
+    <section class="gap-3 ps-5 pe-5 d-flex flex-column mt-4" style="color: white;">
+        <h2>Bienvenido a PadelPlay</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident id maiores facere repudiandae molestias
+            placeat sit laudantium praesentium ex? Tempora in obcaecati qui totam est soluta eligendi suscipit ducimus
+            ea fuga aspernatur exercitationem, minus iure vitae odit amet ipsum delectus.</p>
+        <div class="row">
+            <div class="col-12 col-md-4 mb-3">
+                <img class="imagenesMuestra rounded-5" src="img/Imagen1.webp" alt="">
+            </div>
+            <div class="col-12 col-md-4 mb-3">
+                <img class="imagenesMuestra rounded-5" src="img/Imagen2.avif" alt="">
+            </div>
+            <div class="col-12 col-md-4 mb-3">
+                <img class="imagenesMuestra rounded-5" src="img/Imagen3.jpg" alt="">
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Eventos -->
+    <section style="background-color: #f0f0f0;" class="gap-3 pt-3 ps-5 pe-5 pb-5 d-flex flex-column mt-4">
+        <h2>Eventos</h2>
+
+        <div class="row">
+            <div class="col-12 col-md-4 mb-3">
+                <div class="border-3 shadow-lg p-3 rounded-3">
+                    <h3>Torneo Ib&eacute;rico</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni commodi autem soluta odio temporibus?</p>
+                    <span class="text-danger">8/12/2024</span>
+                </div>
+            </div>
+            <div class="col-12 col-md-4 mb-3">
+                <div class="border-3 shadow-lg p-3 rounded-3">
+                    <h3>Torneo Navidad</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni commodi autem soluta odio temporibus?</p>
+                    <span class="text-danger">8/12/2024</span>
+                </div>
+            </div>
+            <div class="col-12 col-md-4 mb-3">
+                <div class="border-3 shadow-lg p-3 rounded-3">
+                    <h3>Torneo Fin de año</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni commodi autem soluta odio temporibus?</p>
+                    <span class="text-danger">8/12/2024</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Reserva -->
+    <section class="d-flex justify-content-center pt-5 pb-5">
+        <button type="button" class="btn btn-danger">Reserva pista ahora</button>
+    </section>
+
+    <!-- Footer -->
+    <footer class="d-flex flex-wrap justify-content-between p-3">
+        <section>
+            <h4>Cont&aacute;ctanos</h4>
+            <div>
+                <p>Calle Lorem ipsum dolor sit.</p>
+                <p>Email: aldsj@asd.com</p>
+                <p>Tel&eacute;fono: 665 44 33</p>
+            </div>
+        </section>
+        <section>
+            <h4>S&iacute;guenos</h4>
+            <div class="d-flex flex-column gap-3 justify-content-center align-items-center">
+                <img style="width: 20px; height:20px;" src="img/facebook.png" alt="">
+                <img style="width: 20px; height:20px;" src="img/instagram.png" alt="">
+            </div>
+        </section>
+        <section>
+            <h4>Enlaces r&aacute;pidos</h4>
+            <div class="d-flex flex-column">
+                <a class="text-decoration-none" href="#">Calle Lorem </a>
+                <a class="text-decoration-none" href="#">Lorem, ipsum dolor.</a>
+                <a class="text-decoration-none" href="#">Lorem</a>
+            </div> 
+        </section>
+    </footer>
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+
+</html>
