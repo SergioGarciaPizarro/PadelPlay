@@ -43,30 +43,33 @@
         color: white;
     }
     
-     #mainImage {
-        height: 60vh;
-        object-fit: contain;
+    #mainImage {
+        width: 100%; 
+        height: auto;
+        max-height: 60vh; 
+        object-fit: cover; 
+        box-shadow: -4px 0px 42px -19px rgba(252,0,0,1);
     }
 
-   
     @media (max-width: 768px) {
         #mainImage {
-            height: 40vh; 
+            max-height: none; 
         }
     }
 
     body {
+        min-height: 100vh; 
         background: 
         linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
         url('img/Fondo.jpg'); 
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed; 
-   
-}
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: fixed; 
+        background-size: cover;
+    }
 </style>
 
-<body">
+<body>
 
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
