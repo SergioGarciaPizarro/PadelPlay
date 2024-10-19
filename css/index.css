@@ -1,0 +1,42 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.imagenesMuestra {
+    height: 230px;
+    width: 100%; 
+    object-fit: cover; 
+    box-shadow: -4px 0px 62px -19px rgb(255, 255, 255);
+}
+
+.cartaEventos {
+    box-shadow: 10px 10px 36px 0px rgba(54, 54, 54, 0.75);
+    border-radius: 5px, black;
+    padding: 5px;
+}
+
+#mainImage {
+    width: 100%; 
+    height: auto;
+    max-height: 60vh; 
+    object-fit: cover; 
+    box-shadow: -4px 0px 42px -19px rgba(252,0,0,1);
+}
+
+@media (max-width: 768px) {
+    #mainImage {
+        max-height: none; 
+    }
+}
+
+body {
+    min-height: 100vh; 
+    background: 
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+    url('../img/Fondo.jpg'); 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    background-size: cover;
+}
